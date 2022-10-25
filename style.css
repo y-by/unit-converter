@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+body {
+  --purpple: #6943FF;
+  --light-purpple: #B295FF;
+  --blue: #1F2937;
+  --blue-light: #273549;
+  --text-dark: #3D3D3D;
+  --text-light: #CCC1FF;
+  --white: #FFFFFF;
+  
+  height: 100vh;
+  display: grid;
+  place-content: center;
+
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  background: var(--blue);
+  color: var(--white);
+  text-align: center;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.input {
+  padding: 2rem;
+  background: var(--purpple);
+}
+
+.h1 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+input[type=number] {
+  margin: 2rem auto;
+  padding: 0;
+  width: 117px;
+  display: block;
+
+  background: unset;
+  color: var(--white);
+  border: 2px solid var(--light-purpple);
+  border-radius: 5px;
+
+  text-align: center;
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.btn {
+  background: var(--white);
+  color: var(--text-dark);
+  line-height: 24px;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem 1.5rem;
+}
+
+.output-box{
+  background: var(--blue-light);
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  color:  var(--text-light);
+  border-radius: 5px;
+}
+.output-box > h3 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.output-box > p {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* Hide Input Number Arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
